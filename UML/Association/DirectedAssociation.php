@@ -1,7 +1,10 @@
 <?php
 /** Directed ASSOCIATION
  * https://phpmusings.blog/2021/03/01/uml-in-action-part-2-association/
+ * 
+ * 
  */
+
 
 class Client{
     private $client;
@@ -10,7 +13,7 @@ class Client{
     }
 }
 class Server{
-    private $client;
+    private $client; //Association - Server has a Client object as a member variable
     public function __construct(Client $client){
         $this->client = $client;
     }

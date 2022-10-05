@@ -3,7 +3,7 @@
 /* Unidirectional Association Code Example */
 class Customer{
     private $name;
-    private $orders;
+    private $orders = [];
     public function __construct($name){
         $this->name = $name;
     }
